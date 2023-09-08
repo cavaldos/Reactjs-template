@@ -14,27 +14,27 @@ Currently, two official plugins are available:
 ## Install 
 - Clone repository
 ```shell
-$ git clone https://github.com/cavaldos/ReactTS.git
+ git clone https://github.com/cavaldos/ReactTS.git
 ```
 - Rename your-project
 ```shell
-$ mv ReactTS new-project-name
+ mv ReactTS new-project-name
 ```
 - Move path
 ```shell
-$  cd new-project-name
+  cd new-project-name
 ```
 - Remove config git
 ```shell
-$ rm -r .git
+ rm -r .git
 ```
 - Install package dependencies
 ```shell
-$ npm install # pnpm install
+ npm install # pnpm install
 ```
 - Run server
 ```shell
-$ npm run dev # npm run dev
+ npm run dev # npm run dev
 ```
 ## Expanding the ESLint configuration
 
