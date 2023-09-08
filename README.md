@@ -16,18 +16,25 @@ Currently, two official plugins are available:
 ```shell
 $ git clone https://github.com/cavaldos/ReactTS.git
 ```
-
 - Rename your-project
 ```shell
 $ mv ReactTS new-project-name
 ```
+- Move path
+```shell
+$  cd new-project-name
+```
+- Remove config git
+```shell
+$ rm -r .git
+```
 - Install package dependencies
 ```shell
-$ yarn install # npm install
+$ npm install # pnpm install
 ```
 - Run server
 ```shell
-$ yarn start # npm run start
+$ npm run dev # npm run dev
 ```
 ## Expanding the ESLint configuration
 
