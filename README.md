@@ -26,7 +26,7 @@ Currently, two official plugins are available:
 ```
 - Remove config git
 ```shell
- rm -r .git
+ rm -rf .git
 ```
 - Install package dependencies
 ```shell
