@@ -11,13 +11,12 @@ export default createBrowserRouter([
     errorElement: <h1>404</h1>,
     children: [
       {
-        path: "/login",
-        element: <Auth />,
-        
-      },
-      {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/login",
+        element: <Auth />,
       },
     ],
   },
