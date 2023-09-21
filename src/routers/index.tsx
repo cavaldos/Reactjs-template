@@ -12,7 +12,7 @@ export default createBrowserRouter([
     children: [
       {
         path: "/login",
-        component: Auth,
+        element: <Auth />,
         
       },
       {
