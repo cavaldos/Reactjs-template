@@ -1,50 +1,15 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { useSelector } from 'react-redux'
-import { increment, decrement } from './redux/features/countSlice'
-import { useDispatch } from 'react-redux'
+import "./App.css";
+import React from "react";
+import { RouterProvider } from "react-router-dom";
+import routers from "./routers/index.jsx";
+
+import Home from "./pages/home.tsx";
 const App: React.FC = () => {
-  const count = useSelector((state: any) => state.count.value);
-  const dispatch = useDispatch();
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-
-      <div className="card">
-        <button>count :{count}</button>
-        <br />
-        <button
-          onClick={() => {
-            dispatch(increment());
-          }}
-        >
-          increment{" "}
-        </button>
-        <button
-          onClick={() => {
-            dispatch(decrement());
-          }}
-        >
-          decrement{" "}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <RouterProvider router={routers} />
     </>
   );
-}
+};
 
-export default App
+export default App;
