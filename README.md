@@ -17,13 +17,13 @@ Support deploy versel
 - Clone repository
 
 ```shell
- git clone https://github.com/cavaldos/ReactTS.git
+ git clone https://github.com/cavaldos/Reactjs-template.git
 ```
 
 - Rename your-project
 
 ```shell
- mv ReactTS new-project-name
+ mv Reactjs-template new-project-name
 ```
 
 - Move path
