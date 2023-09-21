@@ -4,7 +4,7 @@ import './App.css'
 import { useSelector } from 'react-redux'
 import { increment, decrement } from './redux/features/countSlice'
 import { useDispatch } from 'react-redux'
-function App() {
+const App: React.FC = () => {
   const count = useSelector((state: any) => state.count.value);
   const dispatch = useDispatch();
   return (
